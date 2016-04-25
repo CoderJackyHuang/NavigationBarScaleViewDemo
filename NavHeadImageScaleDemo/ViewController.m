@@ -57,7 +57,7 @@
   
   self.headerImageView.transform = CGAffineTransformMakeScale(scale, scale);
 
-  // 保证缩放后y起点不变化
+  // 保证缩放后y坐标不变
   CGRect frame = self.headerImageView.frame;
   frame.origin.y = -self.headerImageView.layer.cornerRadius / 2;
   self.headerImageView.frame = frame;
